@@ -45,8 +45,8 @@ loginButton = browser.find_element_by_xpath("/html/body/div[1]/section/main/div/
 
 # Read user data (Username and Password to log in to instagram)
 ### Not ready yet
-username = "<your Username here>"
-password = "<your password >"
+username = "your Username here"
+password = "your password"
 
 
 
@@ -134,4 +134,8 @@ for hashtag in hashtag_list :
 		likeActionPOST()
 		LikedPosts += 1
 		print ("Posts liked so far: ",LikedPosts)
+		
+		if LikedPosts == PostAmount :
+			Print ("All done")
+			break
 
