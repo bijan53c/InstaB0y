@@ -45,8 +45,8 @@ loginButton = browser.find_element_by_xpath("/html/body/div[1]/section/main/div/
 
 # Read user data (Username and Password to log in to instagram)
 ### Not ready yet
-username = "your Username here"
-password = "your password"
+username = "username"
+password = "password"
 
 
 
@@ -118,14 +118,13 @@ def open_first_post() :
 	
 	
 
-PostAmount = 5
-LikedPosts = 0
+PostAmount = 10
 #finding hashtags and liking posts
-
-##list of hashtags to look for
-hashtag_list = ["Instagram","web"]
+##hashtags to look for
+hashtag_list = ["instagram"]
 #explore
 for hashtag in hashtag_list :
+	LikedPosts = 0
 	searchbar = browser.get('https://www.instagram.com/explore/tags/'+ hashtag + '/')
 	time.sleep(10)
 	open_first_post()
@@ -133,9 +132,9 @@ for hashtag in hashtag_list :
 	while LikedPosts < PostAmount :
 		likeActionPOST()
 		LikedPosts += 1
-		print ("Posts liked so far: ",LikedPosts)
-		
+		print ("Posts liked so far: ",LikedPosts ," __Hashtag: ",hashtag)
 		if LikedPosts == PostAmount :
-			Print ("All done")
+			print ("All done")
 			break
+
 
