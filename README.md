@@ -2,7 +2,7 @@
 ## Alpha version 1.0.1 / 22.09.2
 #### *Changelog* :
     - Now the bot logs out of account when the process is done. So the created session on your account will be terminated automatically.
-    - Small bugs related to opening the first post is terminated
+    - Small bugs related to opening the first post are terminated
     - *There will be a change logs file , containing any change log from now on.
 
 *Instab0y* is a simple automation script written in python and using selenium. This script automates tasks and actions required 
