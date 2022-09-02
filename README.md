@@ -1,5 +1,9 @@
 # InstaB0y
-## Alpha version 1.0.0 / 22.08.19
+## Alpha version 1.0.1 / 22.09.2
+#### *Changelog* :
+    - Now the bot logs out of account when the process is done. So the created session on your account will be terminated automatically.
+    - Small bugs related to opening the first post is terminated
+    - *There will be a change logs file , containing any change log from now on.
 
 *Instab0y* is a simple automation script written in python and using selenium. This script automates tasks and actions required 
 in the *Instagram* social media. So this helps people like my self to spend less time on social media and get likes , views and followers.
@@ -17,6 +21,7 @@ For now the features of this script is so limited , and it will be improved and 
   - [ ] Adding time outs after some fast actions
   - [ ] Figuring out instagram triggers (what seprates a bot from human)
 - [ ] Reading account info , number of posts to like , number of followers and comments from a config file.
+- [x] Logging out of account when the process is done.
 
 
 
